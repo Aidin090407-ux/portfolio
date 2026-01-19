@@ -61,6 +61,37 @@ header p {
   background-color: #1ebe5d;
 }
 
+/* Секция видео */
+#video-lesson {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#video-lesson p {
+  padding-top: 40px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 пропорции */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #000; /* на случай, если видео ещё не загрузилось */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
 /* Секции */
 section {
   max-width: 900px;
@@ -104,8 +135,8 @@ section p {
   }
 
   header img {
-    margin-right: 0;
     width: 170px;
+    margin-right: 0;
     height: 170px;
   }
 
@@ -127,4 +158,3 @@ section p {
     font-size: 14px;
   }
 }
-
