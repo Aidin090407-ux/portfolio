@@ -1,0 +1,115 @@
+/* Сброс и базовые стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f5faff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+span {
+  color: #1e3a8a;
+}
+
+/* Хедер */
+header {
+  background-color: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+header p {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+/* Кнопка WhatsApp */
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Секции */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  font-size: 24px;
+  border-bottom: 2px solid #1e3a8a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+section p {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.section-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .whatsapp-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+}
