@@ -100,9 +100,19 @@ section p {
     font-size: 16px;
   }
 
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
   .whatsapp-btn {
     padding: 8px 15px;
     font-size: 14px;
+  }
+
+  #achievements img {
+    width: 100%;
+    height: 100%;
   }
 
   section h2 {
